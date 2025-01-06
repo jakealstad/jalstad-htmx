@@ -12,3 +12,4 @@ python_version = "3.13"
 
 [dev-packages]
 ipython = "*"
+ruff = "*"
