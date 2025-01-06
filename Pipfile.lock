@@ -1,7 +1,7 @@
 {
     "_meta": {
         "hash": {
-            "sha256": "8fc4b5c71f1e97f2d8f93c539eb84a5002d5552a8a5028a3840841a463391e5b"
+            "sha256": "338f4ce141b2f190fd898b31ffbd5a1dcf42de6feb0df4613d95c7ef8796c5ec"
         },
         "pipfile-spec": 6,
         "requires": {
@@ -190,6 +190,14 @@
             "markers": "python_version >= '3.8'",
             "version": "==3.0.0"
         },
+        "click": {
+            "hashes": [
+                "sha256:63c132bbbed01578a06712a2d1f497bb62d9c1c0d329b7903a866228027263b2",
+                "sha256:ed53c9d8990d83c2a27deae68e4ee337473f6330c040a31d4225c9574d16096a"
+            ],
+            "markers": "python_version >= '3.7'",
+            "version": "==8.1.8"
+        },
         "decorator": {
             "hashes": [
                 "sha256:637996211036b6385ef91435e4fae22989472f9d571faba8927ba8253acbc330",
@@ -222,6 +230,15 @@
             ],
             "markers": "python_version >= '3.6'",
             "version": "==0.19.2"
+        },
+        "lorem-text": {
+            "hashes": [
+                "sha256:b512779addd08dcc221460ce428f7911b198f66c5763410f3de6d788eb62ceb3",
+                "sha256:b984b5570295084012f5a9385672bab3470965c943b73d8d71a6efcd7a62b5c3"
+            ],
+            "index": "pypi",
+            "markers": "python_version >= '3.5'",
+            "version": "==2.1"
         },
         "matplotlib-inline": {
             "hashes": [

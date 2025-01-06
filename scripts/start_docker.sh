@@ -1,5 +1,11 @@
 #!/bin/bash
 
+num_tasks=${1:-0}
+if [[ -z "$num_tasks" || ! "$num_tasks" =~ ^[0-9]+$ ]]; then
+  echo "Usage: $0 <number of tasks to generate>"
+  exit 1
+fi
+
 projectdir="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )/.."
 cd $projectdir
 
@@ -17,4 +23,4 @@ cd $projectdir
     --env DJANGO_SUPERUSER_EMAIL=admin@example.com \
     --publish 8100:8100 \
     python:3-alpine \
-    scripts/start_django.sh
+    scripts/start_django.sh $num_tasks
