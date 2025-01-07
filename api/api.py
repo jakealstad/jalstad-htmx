@@ -14,6 +14,8 @@ def hello(request):
 
 
 @api.get("get_tasks/", response=List[TaskSchemaOut])
-def get_tasks(request):
-    tasks = Task.objects.all()
-    return list(tasks)
+def get_tasks(request, limit: int = 10, offset: int = 0, task_type: str = None):
+    tasks = (
+        Task.objects.filter(task_type=task_type) if task_type else Task.objects.all()
+    )
+    return list(tasks[offset : offset + limit])

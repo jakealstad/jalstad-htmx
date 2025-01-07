@@ -17,6 +17,6 @@ pipenv install --dev
 pipenv run ./manage.py migrate
 pipenv run ./manage.py createsuperuser --noinput
 pipenv run ./manage.py create_random_tasks $num_tasks
-# pipenv run ./manage.py runserver 0.0.0.0:8100
+pipenv run ./manage.py runserver 0.0.0.0:8100
 
 /bin/sh

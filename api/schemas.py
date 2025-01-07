@@ -8,4 +8,4 @@ TaskSchema = create_schema(Task)
 
 
 class TaskSchemaOut(TaskSchema):
-    task_type: Literal["HM", "WK", "OT"]
+    task_type: Literal["home", "work", "other"]
